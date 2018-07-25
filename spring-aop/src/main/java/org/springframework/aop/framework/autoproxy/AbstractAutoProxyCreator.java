@@ -265,7 +265,9 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 			if (StringUtils.hasLength(beanName)) {
 				this.targetSourcedBeans.add(beanName);
 			}
+			// 创建代理类对象,获取切面
 			Object[] specificInterceptors = getAdvicesAndAdvisorsForBean(beanClass, beanName, targetSource);
+			// 猜测这里可能就是代理类不能调用内部方法的原因的入口
 			Object proxy = createProxy(beanClass, beanName, specificInterceptors, targetSource);
 			this.proxyTypes.put(cacheKey, proxy.getClass());
 			return proxy;
@@ -349,9 +351,15 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 		}
 
 		// Create proxy if we have advice.
+		// 获取切面,过程极其复杂,看不懂,记不住.
+		// 当这里是空的时候,bean不会创建代理,当这个类没有代理的需要的时候,比如只是一个简单的被@Service注解的类,没有被切入点表达式切入的点.
 		Object[] specificInterceptors = getAdvicesAndAdvisorsForBean(bean.getClass(), beanName, null);
 		if (specificInterceptors != DO_NOT_PROXY) {
 			this.advisedBeans.put(cacheKey, Boolean.TRUE);
+			// 创建代理,模式使用jdk代理,问题就在这里,创建代理的时候,方法被代理,但是被代理后的方法不在有事务
+			// 当被代理类是一个普通方法时,父类代理方法调用普通方法的代理方法,普通方法A进一步调用本身对象的B,C方法,调用的是实例对象的内部方法,不是代理方法
+			// 当有@Tranaction注解的方法时,生成动态代理,调用的时候调用的是代理对象的代理方法.
+			// 所以,当时普通方法调用同类方法的时候不会启用事务.父类代理判断普通方法不是代理对象,直接调用.方法内部的调用,调用的是同样式实例对象的方法.
 			Object proxy = createProxy(
 					bean.getClass(), beanName, specificInterceptors, new SingletonTargetSource(bean));
 			this.proxyTypes.put(cacheKey, proxy.getClass());

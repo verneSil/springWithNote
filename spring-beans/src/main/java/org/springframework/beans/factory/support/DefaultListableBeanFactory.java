@@ -794,6 +794,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
 		if (beanDefinition instanceof AbstractBeanDefinition) {
 			try {
+				// verify if the methodOverrides exist
 				((AbstractBeanDefinition) beanDefinition).validate();
 			}
 			catch (BeanDefinitionValidationException ex) {
@@ -804,8 +805,11 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
 		BeanDefinition oldBeanDefinition;
 
+		// remove sychonized  cause the beanDefinitionMap is a ConcurrentHashMap
 		oldBeanDefinition = this.beanDefinitionMap.get(beanName);
+		// not null
 		if (oldBeanDefinition != null) {
+			// default can be overriding,this
 			if (!isAllowBeanDefinitionOverriding()) {
 				throw new BeanDefinitionStoreException(beanDefinition.getResourceDescription(), beanName,
 						"Cannot register bean definition [" + beanDefinition + "] for bean '" + beanName +

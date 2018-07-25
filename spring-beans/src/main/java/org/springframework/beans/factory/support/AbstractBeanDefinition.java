@@ -149,11 +149,13 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 
 	private int autowireMode = AUTOWIRE_NO;
 
+	// bean的初始化依赖与另外一个bean
 	private int dependencyCheck = DEPENDENCY_CHECK_NONE;
 
 	@Nullable
 	private String[] dependsOn;
 
+	// 其他bean在查找装配对象时将忽略本个bean
 	private boolean autowireCandidate = true;
 
 	private boolean primary = false;
@@ -163,35 +165,46 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 	@Nullable
 	private Supplier<?> instanceSupplier;
 
+	// 允许访问非public的方法和构造器
 	private boolean nonPublicAccessAllowed = true;
 
+	// ???? 网上说,是否允许以一种宽松的模式解析构造函数
 	private boolean lenientConstructorResolution = true;
 
+	// 工厂类的beanname
 	@Nullable
 	private String factoryBeanName;
 
+	// 工厂方法的methodname
 	@Nullable
 	private String factoryMethodName;
 
+	//构造方法参数
 	@Nullable
 	private ConstructorArgumentValues constructorArgumentValues;
 
+	//属性集合
 	@Nullable
 	private MutablePropertyValues propertyValues;
 
+	// 重写方法
 	@Nullable
 	private MethodOverrides methodOverrides;
 
+	// 初始化方法
 	@Nullable
 	private String initMethodName;
 
+	// 销毁方法
 	@Nullable
 	private String destroyMethodName;
 
+	// 是否执行initMethod
 	private boolean enforceInitMethod = true;
-
+	// 是否执行destoryMethod
 	private boolean enforceDestroyMethod = true;
 
+	// 是否是用户定义的而不是程序本身定义的
 	private boolean synthetic = false;
 
 	private int role = BeanDefinition.ROLE_APPLICATION;
@@ -199,6 +212,7 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 	@Nullable
 	private String description;
 
+	// 这个bean定义的resource
 	@Nullable
 	private Resource resource;
 

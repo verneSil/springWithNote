@@ -181,12 +181,13 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	@Nullable
 	protected Object getSingleton(String beanName, boolean allowEarlyReference) {
 		Object singletonObject = this.singletonObjects.get(beanName);
-		// 如果不存在并且 也不是在创建过程中
+		// 如果不存在并且 是在创建过程中
 		if (singletonObject == null && isSingletonCurrentlyInCreation(beanName)) {
 			// 每次上锁都是锁的单例的map,效率低,保证不会有线程冲突
 			synchronized (this.singletonObjects) {
 				// earlySingletonObject.
 				singletonObject = this.earlySingletonObjects.get(beanName);
+				// singleton没有,先从singletonFactories中获取
 				if (singletonObject == null && allowEarlyReference) {
 					ObjectFactory<?> singletonFactory = this.singletonFactories.get(beanName);
 					if (singletonFactory != null) {
@@ -214,7 +215,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 		synchronized (this.singletonObjects) {
 			Object singletonObject = this.singletonObjects.get(beanName);
 			if (singletonObject == null) {
-				// 检测是否正在创建过程中,如果是在创建过程中,不允许创建
+				// 检测是否在销毁过程中
 				if (this.singletonsCurrentlyInDestruction) {
 					throw new BeanCreationNotAllowedException(beanName,
 							"Singleton bean creation not allowed while singletons of this factory are in destruction " +
@@ -223,6 +224,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 				if (logger.isDebugEnabled()) {
 					logger.debug("Creating shared instance of singleton bean '" + beanName + "'");
 				}
+				// 检测是否是在创建过程中
 				beforeSingletonCreation(beanName);
 				boolean newSingleton = false;
 				// 看有没有忽略的异常,如果没有就创建一个空的list
@@ -231,6 +233,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 					this.suppressedExceptions = new LinkedHashSet<>();
 				}
 				try {
+					// 通过单例工厂获取单例,反射.
 					singletonObject = singletonFactory.getObject();
 					newSingleton = true;
 				}
@@ -412,6 +415,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	 * @param beanName the name of the bean
 	 * @param dependentBeanName the name of the dependent bean
 	 */
+	// 依赖链条,主要是为了解决
 	public void registerDependentBean(String beanName, String dependentBeanName) {
 		String canonicalName = canonicalName(beanName);
 
