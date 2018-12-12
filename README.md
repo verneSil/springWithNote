@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # <img src="src/docs/asciidoc/images/spring-framework.png" width="80" height="80"> Spring Framework
 
 This is the home of the Spring Framework, the foundation for all
@@ -46,3 +47,9 @@ and releases are announced via our [news feed](http://spring.io/blog/category/ne
 
 The Spring Framework is released under version 2.0 of the
 [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
+=======
+# springWithNote
+this frame is copy from spring ,only for self learning with some note
+>>>>>>> 95244617b7e35a6fec7a5ee8879d216603e91792
+# springWithNote
+this frame is copy from spring ,only for self learning with some note
