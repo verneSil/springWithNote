@@ -1,0 +1,18 @@
+
+psquid:S3776ä"SRefactor this method to reduce its Cognitive Complexity from 140 to the 15 allowed.(„Ù®ùÿÿÿÿ
+asquid:S3358š"DExtract this nested ternary operation into an independent statement.( š¹ùùÿÿÿÿ
+>squid:S1168š"&Return an empty array instead of null.(¥¹ï
+Csquid:S1452•"&Remove usage of generic wildcard type.(²£Ñƒúÿÿÿÿ
+osquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(©Ííıÿÿÿÿ
+nsquid:S3776n"RRefactor this method to reduce its Cognitive Complexity from 91 to the 15 allowed.(”°Ö®ùÿÿÿÿ
+msquid:S1192ñ"UDefine a constant instead of duplicating this literal "constructor argument" 3 times.(ßØ÷
+_squid:S2094…"BRemove this empty class, write its code or make it an "interface".(…ÿáıÿÿÿÿ
+Bsquid:S1181™"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+Zsquid:S00107"<Method has 8 parameters, which is greater than 7 authorized.(©Ííıÿÿÿÿ
+o
+squid:S135¯"YReduce the total number of break and continue statements in this loop to use at most one.(ËüûG
+Bsquid:S1181Í"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+‹"squid:ClassVariableVisibilityCheckÍ"\Make resolveNecessary a static final constant or non-public and provide accessors if needed.(å¶ûÆ
+u
+squid:S135Å"YReduce the total number of break and continue statements in this loop to use at most one.(ÄšâÙûÿÿÿÿ
+Bsquid:S1181¤"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ

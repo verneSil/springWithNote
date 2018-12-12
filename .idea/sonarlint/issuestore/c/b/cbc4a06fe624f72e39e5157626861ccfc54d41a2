@@ -1,0 +1,6 @@
+
+œ%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(Ÿ‡Çô
+msquid:S1192"SDefine a constant instead of duplicating this literal "' in expression \"" 6 times.(À¥ä¿þÿÿÿÿ
+_squid:HiddenFieldCheck":Rename "months" which hides the field declared at line 64.(Þ“Åîÿÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Þˆâ¸ýÿÿÿÿ
+Ysquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ñÖ·²

@@ -1,0 +1,12 @@
+
+¡%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ
+rsquid:S1192"XDefine a constant instead of duplicating this literal "Class must not be null" 16 times.(ç˜Ò‘şÿÿÿÿ
+wsquid:S1192"]Define a constant instead of duplicating this literal "Method name must not be null" 5 times.(·¡Šƒÿÿÿÿÿ
+nsquid:S1192"ZDefine a constant instead of duplicating this literal "Instance must not be null" 3 times.( ëç
+Asquid:S1872"'Use an "instanceof" comparison instead.(²ÕÊıüÿÿÿÿ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(°Ù˜ı
+Osquid:S1118":Add a private constructor to hide the implicit public one.(Ÿ åƒ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ

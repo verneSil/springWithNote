@@ -1,0 +1,3 @@
+
+%squid:RedundantThrowsDeclarationCheck"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(ó¦Àüÿÿÿÿ
+<squid:S1214""Move constants to a class or enum.(é€Ê±şÿÿÿÿ

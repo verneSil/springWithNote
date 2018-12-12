@@ -1,0 +1,9 @@
+
+>squid:S1452×"&Remove usage of generic wildcard type.(’™î
+`squid:S1182ß"HUse super.clone() to create and seed the cloned instance to be returned.(²ÈŞ
+dsquid:CallToDeprecatedMethod¹";Remove this use of "AUTOWIRE_AUTODETECT"; it is deprecated.(˜½ä¨
+œ%squid:RedundantThrowsDeclarationCheck¢"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(¯‹Ÿæ
+jsquid:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(°Ñµ˜
+Qsquid:S1133c"5Do not forget to remove this deprecated code someday.(„¥§¡úÿÿÿÿ
+ksquid:S2975ß"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(²ÈŞ
+jsquid:S3776³"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ûƒéï

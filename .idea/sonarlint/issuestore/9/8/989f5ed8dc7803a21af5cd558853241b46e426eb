@@ -1,0 +1,23 @@
+
+Zsquid:S2184"@Cast one of the operands of this addition operation to a "long".(ã•ÀÛşÿÿÿÿ
+wsquid:S1192"]Define a constant instead of duplicating this literal "singletonFactoryToBeProxied" 10 times.(¿›÷°ûÿÿÿÿ
+Œ"squid:ClassVariableVisibilityCheck"[Make testInterceptor a static final constant or non-public and provide accessors if needed.(°é¶şÿÿÿÿ
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ìâº
+zsquid:S1192"`Define a constant instead of duplicating this literal "containerCallbackInterfacesOnly" 6 times.(ô¹‚şÿÿÿÿ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ââã‡úÿÿÿÿ
+wsquid:S1192"]Define a constant instead of duplicating this literal "&singletonFactoryToBeProxied" 3 times.(œÑ¿ÿÿÿÿÿ
+osquid:S1192"UDefine a constant instead of duplicating this literal "prototypeToBeProxied" 6 times.(È½Óİÿÿÿÿÿ
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
+ksquid:S1192"VDefine a constant instead of duplicating this literal "singletonToBeProxied" 10 times.(ÑúÓ…
+esquid:S1192"PDefine a constant instead of duplicating this literal "testInterceptor" 6 times.(£ƒÙ
+Zsquid:S2184"@Cast one of the operands of this addition operation to a "long".(Î¥‰úÿÿÿÿ
+\squid:S2094"BRemove this empty class, write its code or make it an "interface".(€ˆÈãüÿÿÿÿ
+Œ"squid:ClassVariableVisibilityCheck"[Make nrOfInvocations a static final constant or non-public and provide accessors if needed.(˜‹ÙÅüÿÿÿÿ
+qsquid:S1192"WDefine a constant instead of duplicating this literal "singletonNoInterceptor" 6 times.(öê”Ğùÿÿÿÿ
+hsquid:S1192"NDefine a constant instead of duplicating this literal "messageSource" 4 times.(‚Âµ¹ÿÿÿÿÿ
+vsquid:S1192"\Define a constant instead of duplicating this literal "prototypeFactoryToBeProxied" 4 times.(¦šùµúÿÿÿÿ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™”îäşÿÿÿÿ
+psquid:S1192"VDefine a constant instead of duplicating this literal "testAutoProxyCreator" 16 times.(Ğ±™şÿÿÿÿ
+[squid:S1192"FDefine a constant instead of duplicating this literal "false" 5 times.(ÊÔ¨–
+Zsquid:S2184"@Cast one of the operands of this addition operation to a "long".(ã•ÀÛşÿÿÿÿ
+gsquid:S1192"MDefine a constant instead of duplicating this literal "noInterfaces" 6 times.(ıˆçÁüÿÿÿÿ

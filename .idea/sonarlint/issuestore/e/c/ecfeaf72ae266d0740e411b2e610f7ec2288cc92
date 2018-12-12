@@ -1,0 +1,8 @@
+
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(­ŠÙ÷ùÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¾ß±¨ÿÿÿÿÿ
+Usquid:S1193"@Replace the usage of the "instanceof" operator by a catch block.(ƒÖÎ°
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(¯îÝÞ
+5squid:S1181"!Catch Exception instead of Error.(Óð€R
+Šsquid:S1192"uDefine a constant instead of duplicating this literal "Application exception overridden by commit exception" 4 times.(ýÉ§Ñ
+5squid:S1181"!Catch Exception instead of Error.(Óð€R

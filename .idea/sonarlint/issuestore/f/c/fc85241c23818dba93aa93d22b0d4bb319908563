@@ -1,0 +1,19 @@
+
+vsquid:S3776÷	"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(·¥‡ïøÿÿÿÿ8ö§ÔáÃ,
+usquid:HiddenFieldCheckæ"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+vsquid:S3776¦	"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ğ¤Û‘üÿÿÿÿ8ö§ÔáÃ,
+usquid:HiddenFieldCheck¸"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+qsquid:HiddenFieldCheckÁ"BRename "typeConverter" which hides the field declared at line 179.(ÇÈ€áøÿÿÿÿ8ö§ÔáÃ,
+vsquid:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Â£€Ïÿÿÿÿÿ8ö§ÔáÃ,
+usquid:HiddenFieldCheck¬"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+vsquid:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(—¾Ööûÿÿÿÿ8ö§ÔáÃ,
+qsquid:S3776†"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(‹Á8ö§ÔáÃ,
+usquid:HiddenFieldCheck³"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+usquid:HiddenFieldCheckÊ"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+usquid:HiddenFieldCheck«"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+ssquid:HiddenFieldCheck’"DRename "tempClassLoader" which hides the field declared at line 160.(ÕäÃŠûÿÿÿÿ8ö§ÔáÃ,
+Ysquid:S1141Ù"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ö§ÔáÃ,
+psquid:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.(–È•Z8ö§ÔáÃ,
+usquid:HiddenFieldCheckı"FRename "parentBeanFactory" which hides the field declared at line 150.(¦àôÀıÿÿÿÿ8ö§ÔáÃ,
+Ysquid:S1141†"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ãÕáÃ,
+ssquid:HiddenFieldCheck"DRename "beanClassLoader" which hides the field declared at line 155.(ÊƒÖŒùÿÿÿÿ8ö§ÔáÃ,

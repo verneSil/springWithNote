@@ -1,0 +1,5 @@
+
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ƒÝ­®
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(©Äœº
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó™Í³ùÿÿÿÿ
+asquid:HiddenFieldCheck"<Rename "delegate" which hides the field declared at line 83.(äÓ¹½ÿÿÿÿÿ

@@ -1,0 +1,7 @@
+
+osquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(’­Ö“úÿÿÿÿ8žá­ßÃ,
+Isquid:S1181Ø"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ8žá­ßÃ,
+ysquid:S1192s"[Define a constant instead of duplicating this literal "Bean name must not be null" 4 times.(·¡ˆ¼8žá­ßÃ,
+qsquid:S3776Ô"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(­½§£8žá­ßÃ,
+rsquid:S3824½"NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(òÿÞ©øÿÿÿÿ8žá­ßÃ,
+¢%squid:RedundantThrowsDeclarationCheckr"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(ø°ÞŽ8žá­ßÃ,

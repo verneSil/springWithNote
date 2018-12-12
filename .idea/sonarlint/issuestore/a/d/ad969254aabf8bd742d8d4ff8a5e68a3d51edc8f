@@ -1,0 +1,12 @@
+
+qsquid:S4144~"UUpdate this method so that its implementation is not identical to "stop" on line 114.(­úÛÿÿÿÿÿ
+osquid:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ğ¡­­üÿÿÿÿ
+Q
+squid:S899ÿ":Do something with the "boolean" value returned by "await".(ĞÃÛÉ
+Bsquid:S1181ƒ"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+asquid:HiddenFieldCheck”"?Rename "beanFactory" which hides the field declared at line 60.(·™æ%
+isquid:S1192²"LDefine a constant instead of duplicating this literal "' of type [" 3 times.(†ıî¥ûÿÿÿÿ
+osquid:S3776Ü"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¤Ä®ıÿÿÿÿ
+asquid:HiddenFieldCheckS"?Rename "beanFactory" which hides the field declared at line 60.(Û…Ö
+vsquid:S1210œ"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(††Ìñÿÿÿÿÿ
+Bsquid:S1181·"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ

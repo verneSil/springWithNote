@@ -1,0 +1,10 @@
+
+?squid:S2160"+Override the "equals" method in this class.(ëÈÑ
+,squid:S2176"Rename this class.(ü¯Ö¬ûÿÿÿÿ
+_squid:HiddenFieldCheck"?Rename "references" which hides the field declared at line 458.(Íº°…
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(È³‚ˆüÿÿÿÿ
+Lsquid:S1610"7Convert the abstract class "Entries" into an interface.(²—íÛ
+Dsquid:S2388"*Prefix this call to "clear" with "super.".(Ê—´¨øÿÿÿÿ
+Dsquid:S2388"*Prefix this call to "clear" with "super.".(Ê—´¨øÿÿÿÿ
+Gsquid:S1948"2Make "referenceManager" transient or serializable.(×ëðµ
+Asquid:S1948",Make "references" transient or serializable.(ç´¥Œ

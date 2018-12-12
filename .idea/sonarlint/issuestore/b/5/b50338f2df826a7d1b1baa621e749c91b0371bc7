@@ -1,0 +1,13 @@
+
+Lsquid:S1135"2Complete the task associated to this TODO comment.(’×¦šùÿÿÿÿ
+=squid:S1948"(Make "target" transient or serializable.(£¶¿æ
+Gsquid:S1948"-Make "adviceChain" transient or serializable.(…ıÇÃşÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(—ú“á
+Ksquid:S1948"1Make "constructorArgs" transient or serializable.(ı›é¢şÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¿ˆÚ°
+=squid:S1948"(Make "target" transient or serializable.(£¶¿æ
+Bsquid:S1948"(Make "target" transient or serializable.(ô¸òüÿÿÿÿ
+=squid:S1948"(Make "target" transient or serializable.(£¶¿æ
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¸æ‹ûüÿÿÿÿ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ

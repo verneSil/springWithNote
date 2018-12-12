@@ -1,0 +1,18 @@
+
+Bsquid:S1181ó"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+œ%squid:RedundantThrowsDeclarationCheck£"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(±ß€ö
+jsquid:S1192æ"SDefine a constant instead of duplicating this literal "': using default [" 3 times.(ë‘Ï
+csquid:HiddenFieldCheckç
+";Rename "parent" which hides the field declared at line 170.(ÌšÃüÿÿÿÿ
+Msquid:S1133¹"5Do not forget to remove this deprecated code someday.(‚“¶î
+¡%squid:RedundantThrowsDeclarationCheck„"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(şĞ„¬üÿÿÿÿ
+¡%squid:RedundantThrowsDeclarationCheckÜ
+"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(µ£•ªüÿÿÿÿ
+Bsquid:S1181ê"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+œ%squid:RedundantThrowsDeclarationCheckÌ"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(Šàê
+¡%squid:RedundantThrowsDeclarationCheck„
+"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(¿Ëçœÿÿÿÿÿ
+>squid:S1452ÿ"&Remove usage of generic wildcard type.(Ğ¬öÎ
+œ%squid:RedundantThrowsDeclarationCheckÅ
+"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(Âºÿ
+¡%squid:RedundantThrowsDeclarationCheck°"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(œêä®ûÿÿÿÿ

@@ -1,0 +1,13 @@
+
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Í±¶óûÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‹Á´
+hsquid:S1192"NDefine a constant instead of duplicating this literal "async-support" 4 times.(´¢¢çûÿÿÿÿ
+osquid:S1192"ZDefine a constant instead of duplicating this literal "contentNegotiationManager" 3 times.(ğûÙ‰
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(•Ä¦ùÿÿÿÿ
+`squid:S1192"FDefine a constant instead of duplicating this literal "order" 4 times.(Ë”üàşÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘úÀ‰üÿÿÿÿ
+dsquid:S1192"JDefine a constant instead of duplicating this literal "validator" 3 times.(¢ÜëËşÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†æ¶şÿÿÿÿ
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(×Ñ¢Èıÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(µÖÌ”
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†€ˆÕ

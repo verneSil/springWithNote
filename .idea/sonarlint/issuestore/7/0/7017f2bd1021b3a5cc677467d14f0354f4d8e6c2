@@ -1,0 +1,16 @@
+
+Psquid:S1948œ"8Make "resolvableDependencies" transient or serializable.(Çï¤—
+osquid:S3776´"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(î’•Ïùÿÿÿÿ
+jsquid:S3776é"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(¬¾…®
+œ%squid:RedundantThrowsDeclarationCheck§"jRemove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.(ø°ÞŽ
+Ksquid:S2864ƒ
+"4Iterate over the "entrySet" instead of the "keySet".(öÄÊ2
+jsquid:S3776Š	"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(‡Ø±Ä
+`squid:S1192·"IDefine a constant instead of duplicating this literal "] with [" 3 times.(ôÂœ_
+osquid:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ø«éŽûÿÿÿÿ
+osquid:S3776•"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ù“§¥þÿÿÿÿ
+osquid:S3776•"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(»ú‡•úÿÿÿÿ
+jsquid:S3776ý	"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ç‰àú
+jsquid:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¨Û€†
+Ssquid:S1948–"6Make "dependencyComparator" transient or serializable.(ÄÑ¿ªøÿÿÿÿ
+jsquid:S3776×"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(þãûé

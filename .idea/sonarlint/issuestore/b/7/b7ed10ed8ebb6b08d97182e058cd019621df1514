@@ -1,0 +1,26 @@
+
+Rsquid:S1197"8Move the array designator from the variable to the type.(åØãåùÿÿÿÿ
+Msquid:S1197"8Move the array designator from the variable to the type.(Ì«°ú
+fsquid:S1192"LDefine a constant instead of duplicating this literal "newInstance" 3 times.(¬ ¶Ýøÿÿÿÿ
+Msquid:S3878"8Remove this array creation and simply pass the elements.(‡©Ûæ
+Vsquid:S3878"ADisambiguate this call by either casting as "Class" or "Class[]".(¶ê¾§
+a$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(òÙÂÏúÿÿÿÿ
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(÷“ø¿ùÿÿÿÿ
+vsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "data".(Ýžåýÿÿÿÿ
+bsquid:HiddenFieldCheck"BRename "argumentTypes" which hides the field declared at line 229.(Ä—œ…
+csquid:HiddenFieldCheck">Rename "arguments" which hides the field declared at line 231.(¥×µÅøÿÿÿÿ
+bsquid:HiddenFieldCheck"BRename "argumentTypes" which hides the field declared at line 229.(Ä—œ…
+Lsquid:S1135"2Complete the task associated to this TODO comment.(ìçÝÎúÿÿÿÿ
+Gsquid:S1135"2Complete the task associated to this TODO comment.(ŽÞ­
+Gsquid:S1135"2Complete the task associated to this TODO comment.(¤¡´û
+Lsquid:S1135"2Complete the task associated to this TODO comment.(•ïÏÜûÿÿÿÿ
+Gsquid:S1135"2Complete the task associated to this TODO comment.(ä¸‰’
+?squid:S1481"*Remove this unused "state" local variable.(Œï»¨
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(·ø‰þÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(°››úÿÿÿÿ
+dsquid:S2259"JA "NullPointerException" could be thrown; "actualMethod" is nullable here.(ØØæåøÿÿÿÿ
+Nsquid:S1854"9Remove this useless assignment to local variable "state".(Œï»¨
+Zsquid:S2147"ECombine this catch with the one at line 814, which has the same body.(™è“î
+_squid:S2147"ECombine this catch with the one at line 900, which has the same body.(ÿŠïýÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤·ü°üÿÿÿÿ
+Xsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(üœ †ýÿÿÿÿ

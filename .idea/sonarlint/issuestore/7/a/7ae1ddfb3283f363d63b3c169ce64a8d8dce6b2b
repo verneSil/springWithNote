@@ -1,0 +1,8 @@
+
+Asquid:S1872"'Use an "instanceof" comparison instead.(ª²É•ùÿÿÿÿ
+esquid:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(°Ñµ˜
+gsquid:HiddenFieldCheck"BRename "resolvableType" which hides the field declared at line 76.(à·˜šøÿÿÿÿ
+Gsquid:S1135"2Complete the task associated to this TODO comment.(††Å­
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(äıÿşÿÿÿÿ
+\squid:S2259"GA "NullPointerException" could be thrown; "otherDesc" is nullable here.(Ç·Û¯
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ

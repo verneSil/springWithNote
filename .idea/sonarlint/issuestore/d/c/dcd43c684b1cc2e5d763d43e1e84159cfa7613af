@@ -1,0 +1,12 @@
+
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+Jsquid:S1133"5Do not forget to remove this deprecated code someday.(ú“Äë
+¡%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+¡%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ
+Osquid:S1118":Add a private constructor to hide the implicit public one.(„İæÅ
+?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(±’îûÿÿÿÿ
+¡%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(õÕèĞ
+qsquid:S1192"WDefine a constant instead of duplicating this literal "Class must not be null" 5 times.(ç˜Ò‘şÿÿÿÿ

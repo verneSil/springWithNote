@@ -1,0 +1,17 @@
+
+€squid:S4144"_Update this method so that its implementation is not identical to "getClassFilter" on line 176.(äî¢áüÿÿÿÿ8íûß–¿,
+ssquid:HiddenFieldCheck"GRename "pointcutExpression" which hides the field declared at line 119.(¿ö™ûÿÿÿÿ8íûß–¿,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8íûß–¿,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8íûß–¿,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8íûß–¿,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8íûß–¿,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8íûß–¿,
+Vsquid:S1133"5Do not forget to remove this deprecated code someday.(ÁÑÑ“ıÿÿÿÿ8íûß–¿,
+Vsquid:S1133"5Do not forget to remove this deprecated code someday.(åÂ‡’şÿÿÿÿ8íûß–¿,
+Zsquid:MissingDeprecatedCheck"(Add the missing @deprecated Javadoc tag.(ÁÑÑ“ıÿÿÿÿ8íûß–¿,
+Zsquid:MissingDeprecatedCheck"(Add the missing @deprecated Javadoc tag.(åÂ‡’şÿÿÿÿ8íûß–¿,
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ë¯ÔÎ8íûß–¿,
+Fsquid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ8íûß–¿,
+Fsquid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ8íûß–¿,
+Fsquid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ8íûß–¿,
+Fsquid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ8íûß–¿,
