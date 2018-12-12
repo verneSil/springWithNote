@@ -354,7 +354,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				// Create bean instance.
 				// 如果是单例的bean,到此位置,parentBeanFactory为空,没有循环依赖
 				if (mbd.isSingleton()) {
-					// 获取单例的过程
+					// 获取单例的过程,参数是beanName和一个匿名内部类
 					sharedInstance = getSingleton(beanName, () -> {
 						try {
 							// 创建单例的代码

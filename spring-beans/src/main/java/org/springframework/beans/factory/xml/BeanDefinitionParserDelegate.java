@@ -520,7 +520,10 @@ public class BeanDefinitionParserDelegate {
 			bd.setDescription(DomUtils.getChildElementValueByTagName(ele, DESCRIPTION_ELEMENT));
 
 			parseMetaElements(ele, bd);
+
+			// spring功能,可以通过配置xml替换某各类中的属性
 			parseLookupOverrideSubElements(ele, bd.getMethodOverrides());
+			// spring功能,可以通过配置xml替换某各类中的方法
 			parseReplacedMethodSubElements(ele, bd.getMethodOverrides());
 
 			// 构造方法解析

@@ -85,6 +85,7 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 					}
 				}
 			}
+			// 里面又分两种,kotlin和普通的jdk代理
 			return BeanUtils.instantiateClass(constructorToUse);
 		}
 		// 重写方法了才会走CGLIB代理
