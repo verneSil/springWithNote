@@ -578,6 +578,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		// 创建一个earlySingletonFactory
 		boolean earlySingletonExposure = (mbd.isSingleton() && this.allowCircularReferences &&
 				isSingletonCurrentlyInCreation(beanName));
+		// 如果允许提早暴露
 		if (earlySingletonExposure) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("Eagerly caching bean '" + beanName +
@@ -586,7 +587,8 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			// getEarlyBeanReference是aop的的关键,这里就是singleFactory,里面只有一个getObject
 			// todo getObject
 			// 涉及singletonFactory,singleObjectd的删除,还有registeredSingleton的增加
-			// 这个增加在下面月615行的getSingleTon处调用
+			// 这个增加在下面月615行的getSingleTon处调用,有了这个,才能解决循环依赖.
+			// !!! 在这里,把获取单例的方法暴露出,之后循环依赖的bean就可以获取到了.
 			addSingletonFactory(beanName, () -> getEarlyBeanReference(beanName, mbd, bean));
 		}
 
@@ -595,7 +597,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		Object exposedObject = bean;
 		// 经过下面这两部后,一个bean基本就被加载完.
 		try {
-			// 注入bean,根据type或者name注入,如果要注入的bean没有创建,就会递归的调用getBean
+			// 注入bean,根据type或者name注入,如果要注入的bean没有创建,就会递归的调用getBean,解决循环依赖的地方就是这个了
 			populateBean(beanName, mbd, instanceWrapper);
 			// 这个是可以expose的bean,会植入advisor
 			exposedObject = initializeBean(beanName, exposedObject, mbd);
