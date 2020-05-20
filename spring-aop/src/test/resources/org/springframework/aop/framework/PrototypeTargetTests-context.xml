@@ -35,8 +35,10 @@
 			<list>
 				<value>testInterceptor</value>
 				<value>testBeanTarget</value>
+
 			</list>
 		</property>
+
 	</bean>
 
 </beans>
