@@ -262,6 +262,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	protected <T> T doGetBean(final String name, @Nullable final Class<T> requiredType,
 							  @Nullable final Object[] args, boolean typeCheckOnly) throws BeansException {
 
+		// 转成spring 允许的
 		final String beanName = transformedBeanName(name);
 		Object bean;
 
@@ -271,10 +272,10 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// 这句比较有意思
 		// singletonObject获取,没有就从eralySingletonObject获取,还没有就通过beanName获取单例工厂,
 		// 有工厂就通过工厂获取一个earlybean放入earlySingletonObject,并把beanFactory从singleFactory中删除
-		// 所以返回的可能是singletonObject,可能是earlySingletonobject,也有可能是singletonFactory,也有可能是空,
-		// 空的原因是singleFactory中还没有beanFactory
+		// 返回的可能是singletonObject,可能是earlySingletonobject,也有可能是空,
+		// 空的原因是singleFactory中还没有beanFactory,s空意味着完全没有初始化过.
 		Object sharedInstance = getSingleton(beanName);
-		// 如果已经已经有了工厂类或者实例类,就是已经创建好了
+		// 如果有 ,则表明已经有早起的版本.可能有在两个阶段,一个是earlySingleton,一个是inCreation.
 		if (sharedInstance != null && args == null) {
 			if (logger.isDebugEnabled()) {
 				if (isSingletonCurrentlyInCreation(beanName)) {
@@ -286,19 +287,22 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 			}
 			// 已经有了就直接获取,解决循环依赖,这个时候sharedInstance已经可能为beanFactory或者earlySingletonObject或者singleObject了
+			// 这是只有已经有早期版了才会进这里,这个早期可能是工厂,也可能是earlySingle,也可能是SingleCurrentIncreation
 			bean = getObjectForBeanInstance(sharedInstance, name, beanName, null);
 		} else { // 如果既没有singletonObject,earlySingletonObject,singletonFactory
 			// Fail if we're already creating this bean instance:
 			// We're assumably within a circular reference.
 			// only solver dependency when the bean is a singleton
 			// if not singleton, throw exception
+			// 如果是多利,这里不能进入.
 			if (isPrototypeCurrentlyInCreation(beanName)) {
 				throw new BeanCurrentlyInCreationException(beanName);
 			}
 
 			// Check if bean definition exists in this factory.
 			BeanFactory parentBeanFactory = getParentBeanFactory();
-			// 如果partenBeanFactory已经创建,并且没有beanName的定义
+			// 如果partenBeanFactory已经创建,并且没有beanName的定义,
+			// 如果有就获取了
 			if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
 				// Not found -> check parent.
 				// 转成factoryBeanName原始name
@@ -343,6 +347,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 						// 注册依赖的bean,不涉及bean的加载,只是注册一下,放入map中.
 						registerDependentBean(dep, beanName);
 						try {
+							// 这里是加载,很奇怪
 							getBean(dep);
 						} catch (NoSuchBeanDefinitionException ex) {
 							throw new BeanCreationException(mbd.getResourceDescription(), beanName,
@@ -1648,6 +1653,8 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			Object beanInstance, String name, String beanName, @Nullable RootBeanDefinition mbd) {
 
 		// Don't let calling code try to dereference the factory if the bean isn't a factory.
+
+		// 是 工厂取消引用,则返回,不做处理
 		if (BeanFactoryUtils.isFactoryDereference(name)) {
 			if (beanInstance instanceof NullBean) {
 				return beanInstance;

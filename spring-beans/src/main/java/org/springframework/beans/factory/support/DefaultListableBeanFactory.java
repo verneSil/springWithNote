@@ -1556,6 +1556,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 						super.resolveCandidate(beanName, requiredType, beanFactory));
 			}
 		};
+		// 解决依赖
 		return Optional.ofNullable(doResolveDependency(descriptorToUse, beanName, null, null));
 	}
 
@@ -1643,9 +1644,11 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		@Override
 		public Object getObject() throws BeansException {
 			if (this.optional) {
+				// 创建以来
 				return createOptionalDependency(this.descriptor, this.beanName);
 			}
 			else {
+				// 解决以来
 				Object result = doResolveDependency(this.descriptor, this.beanName, null, null);
 				if (result == null) {
 					throw new NoSuchBeanDefinitionException(this.descriptor.getResolvableType());

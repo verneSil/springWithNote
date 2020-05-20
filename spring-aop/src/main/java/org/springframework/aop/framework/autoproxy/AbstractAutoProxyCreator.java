@@ -268,6 +268,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 			// 创建代理类对象,获取切面
 			Object[] specificInterceptors = getAdvicesAndAdvisorsForBean(beanClass, beanName, targetSource);
 			// 猜测这里可能就是代理类不能调用内部方法的原因的入口
+			// 这里是真实的设置代理,代理
 			Object proxy = createProxy(beanClass, beanName, specificInterceptors, targetSource);
 			this.proxyTypes.put(cacheKey, proxy.getClass());
 			return proxy;
@@ -468,7 +469,9 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 			}
 		}
 
+		// 适合当前bean的advice,重新封装下,
 		Advisor[] advisors = buildAdvisors(beanName, specificInterceptors);
+		// 添加到factory中
 		proxyFactory.addAdvisors(advisors);
 		proxyFactory.setTargetSource(targetSource);
 		customizeProxyFactory(proxyFactory);
@@ -478,6 +481,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 			proxyFactory.setPreFiltered(true);
 		}
 
+		// 通过proxyClassLoader获取代理对象
 		return proxyFactory.getProxy(getProxyClassLoader());
 	}
 

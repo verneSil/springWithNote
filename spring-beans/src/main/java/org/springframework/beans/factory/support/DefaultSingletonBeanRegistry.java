@@ -226,6 +226,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 					logger.debug("Creating shared instance of singleton bean '" + beanName + "'");
 				}
 				// 检测是否是在创建过程中,创建途中不允许在创建
+				// 同时向currentSingletonInCreation中注册
 				beforeSingletonCreation(beanName);
 				boolean newSingleton = false;
 				// 看有没有忽略的异常,如果没有就创建一个空的list
@@ -235,6 +236,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 				}
 				try {
 					// 通过单例工厂获取单例,反射,入口,这个方法就是入参中singletonFactory的方法
+					// TODO: 2020/5/20 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 					singletonObject = singletonFactory.getObject();
 					newSingleton = true;
 				}

@@ -435,6 +435,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			throws BeansException {
 
 		Object result = existingBean;
+		// 这里是获取了所有的BeanPostPrcessor();然后处理,可能注册了aop,反正有的BeanPostProcessor都弄了,balabalabala
 		for (BeanPostProcessor beanProcessor : getBeanPostProcessors()) {
 			Object current = beanProcessor.postProcessAfterInitialization(result, beanName);
 			if (current == null) {
@@ -493,6 +494,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			// Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
 			// SmartInstantiationAwareBeanPostProcessor接口的类去改变
 			// 尝试生成代理类对象
+			//  NOTE_BY_ZWC: 什么时候mbd.beforeInstantiationResolved才会为True?执行完这个方法就改了
 			Object bean = resolveBeforeInstantiation(beanName, mbdToUse);
 			if (bean != null) {
 				return bean;
@@ -503,7 +505,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 					"BeanPostProcessor before instantiation of bean failed", ex);
 		}
 
-		// 这下面生成的对象,都不是代理的类对象,实例对象
+		// 这下面生成的对象,都不是代理的类对象,实例对象  //  NOTE_BY_ZWC: 前面这句话,我之前为什么这么说?
 		try {
 			// createBean开始执行,create之后返回的是一个用于暴露的bean,意味着完全生成.可能是代理,也可能不存在代理
 			Object beanInstance = doCreateBean(beanName, mbdToUse, args);
@@ -576,6 +578,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		// Eagerly cache singletons to be able to resolve circular references
 		// even when triggered by lifecycle interfaces like BeanFactoryAware.
 		// 创建一个earlySingletonFactory
+		// 是单利,允许循环依赖,且在早起创建过程中
 		boolean earlySingletonExposure = (mbd.isSingleton() && this.allowCircularReferences &&
 				isSingletonCurrentlyInCreation(beanName));
 		// 如果允许提早暴露
@@ -613,7 +616,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 		// 只有单例是在创建过程中才会进入
 		if (earlySingletonExposure) {
-			// 从singleton中获取
+			// 从singleton中获取,这里已经是不允许早期的引用的.
 			Object earlySingletonReference = getSingleton(beanName, false);
 			if (earlySingletonReference != null) {
 				if (exposedObject == bean) {
@@ -1064,7 +1067,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			if (!mbd.isSynthetic() && hasInstantiationAwareBeanPostProcessors()) {
 				Class<?> targetType = determineTargetType(beanName, mbd);
 				if (targetType != null) {
-					// 使用反射创建,内部涉及代理的创建
+					// 创建代理的入口
 					bean = applyBeanPostProcessorsBeforeInstantiation(targetType, beanName);
 					if (bean != null) {
 						// 实例化之后,同样涉及bean的包装:wrapIfNecessay
@@ -1886,6 +1889,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 */
 	@Override
 	protected Object postProcessObjectFromFactoryBean(Object object, String beanName) {
+		// 从上面注释看好像可能进入aop
 		return applyBeanPostProcessorsAfterInitialization(object, beanName);
 	}
 
